@@ -17,9 +17,23 @@ body{
     position: relative;
 }
 
-.inline-block{
-    display: inline-block;
+
+iframe{
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 12px;
     margin-right: 20px;
+}
+
+
+.inline-block{
+    display: flex;
+    margin-right: 20px;
+}
+
+.inline-block .player{
+    display: flex;
+    margin-left: 20px;
 }
 
 .inline-block.logo{
@@ -29,6 +43,7 @@ body{
 
 .inline-block.menu{
     position: absolute;
+    flex: 1;
     top: 5px;
     right: 5px;
 }
@@ -68,7 +83,7 @@ body{
 
 iframe{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
     border-radius: 12px;
     margin-right: 20px;
 }
@@ -114,7 +129,7 @@ iframe{
 }
 
 .heroImg p{
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: thin;
     line-height: 35px;
     justify-content: center;
@@ -438,10 +453,22 @@ iframe{
         opacity: 0.3;
     }
 
-}
+    .logo img{
+        margin-left: 0px;
+        width: 50%;
+    }
 
-@media only screen and (max-width: 800px) {
     .work{
         display: none;
     }
+
+    .inline-block.player{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+
+ 
 }
+    
