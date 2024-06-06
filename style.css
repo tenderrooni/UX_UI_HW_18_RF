@@ -27,7 +27,6 @@ iframe{
 
 
 .inline-block{
-    display: flex;
     margin-right: 20px;
 }
 
@@ -38,7 +37,8 @@ iframe{
 
 .inline-block.logo{
     margin-right: 30px;
-    position: relative;
+    width: auto;
+    padding: 5px;
 }
 
 .inline-block.menu{
@@ -455,17 +455,16 @@ iframe{
 
     .logo img{
         margin-left: 0px;
-        width: 50%;
+        
     }
 
-    .work{
-        display: none;
-    }
+   
 
     .inline-block.player{
-        display: flex;
+        display: none;
         justify-content: flex-start;
         align-items: flex-start;
+
         
     }
 
